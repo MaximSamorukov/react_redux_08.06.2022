@@ -1,7 +1,10 @@
 import React from 'react'
+import Title from './Title';
 
 export default function ThirdPage() {
   return (
-    <div>third_page</div>
+    <>
+      <Title title='third_page' />
+    </>
   )
 }

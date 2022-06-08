@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import links from '../links';
 
 export default function Menu() {
   return (
@@ -13,17 +14,22 @@ export default function Menu() {
         <li>
           <Link style={{
             textDecoration: 'none',
-          }} to='first_page'>First page</Link>
+          }} to={links.total}>Total page</Link>
         </li>
         <li>
           <Link style={{
             textDecoration: 'none',
-          }} to='second_page'>Second page</Link>
+          }} to={links.first}>First page</Link>
         </li>
         <li>
           <Link style={{
             textDecoration: 'none',
-          }} to='third_page'>Third page</Link>
+          }} to={links.second}>Second page</Link>
+        </li>
+        <li>
+          <Link style={{
+            textDecoration: 'none',
+          }} to={links.third}>Third page</Link>
         </li>
       </ul>
     </div>

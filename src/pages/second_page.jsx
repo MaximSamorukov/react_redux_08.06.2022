@@ -1,7 +1,10 @@
 import React from 'react'
+import Title from './Title';
 
 export default function SecondPage() {
   return (
-    <div>second_page</div>
+    <>
+      <Title title='second_page' />
+    </>
   )
 }

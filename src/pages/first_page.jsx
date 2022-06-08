@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Title from './Title';
 
 export default function FirstPage() {
   return (
-    <div>first_page</div>
+    <>
+      <Title title='first_page' />
+    </>
   )
 }
