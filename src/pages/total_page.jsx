@@ -2,7 +2,6 @@ import React from 'react'
 import Title from './Title';
 import Board from './Board';
 import ItemPage from './ItemPage';
-import links from '../links';
 import { useSelector } from 'react-redux';
 
 export default function TotalPage() {
