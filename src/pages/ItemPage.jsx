@@ -5,7 +5,7 @@ export default function ItemPage({ slice }) {
     <div
       style={{
         border: '2px solid black',
-        width: '95%',
+        width: '100%',
         height: '300px',
         margin: '10px'
       }}
