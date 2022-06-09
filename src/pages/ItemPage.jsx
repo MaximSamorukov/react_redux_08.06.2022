@@ -1,16 +1,18 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Paper } from '@mui/material';
 
 export default function ItemPage({ reducer }) {
   const data = useSelector((state) => state[reducer]);
   const values = Object.entries(data);
   return (
-    <div
+    <Paper
+      elevation={3}
       style={{
-        border: '2px solid black',
         width: '100%',
         height: '300px',
-        margin: '10px'
+        margin: '10px',
+        padding: '10px'
       }}
     >
       {reducer}
@@ -33,6 +35,6 @@ export default function ItemPage({ reducer }) {
           </div>
         ))}
       </div>
-    </div>
+    </Paper>
   )
 }
