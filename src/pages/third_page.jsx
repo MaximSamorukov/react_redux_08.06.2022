@@ -1,7 +1,8 @@
 import React from 'react';
 import Title from './Title';
 import { useSelector, useDispatch } from 'react-redux';
-import { setFirstArgument, setSecondArgument, setThirdArgument, setFourthArgument, setFifthArgument } from '../store/slices/third_page';
+import { setFirstArgument, setSecondArgument, setThirdArgument, setFourthArgument, setFifthArgument, setInitialState_thirdPage } from '../store/slices/third_page';
+import { Button } from '@mui/material';
 
 export default function ThirdPage() {
   const { first_argument, second_argument, third_argument, fourth_argument, fifth_argument } = useSelector((state) => state.thirdPage);
@@ -34,6 +35,13 @@ export default function ThirdPage() {
         <label htmlFor='fifth_argument'>fifth_argument</label>
         <input name='fifth_argument' value={fifth_argument} onChange={(e) => dispatch(setFifthArgument({ value: e.target.value }))} />
       </div>
+      <Button
+        onClick={() => {
+          dispatch(setInitialState_thirdPage())
+        }}
+      >
+        Clear All
+      </Button>
     </>
   )
 }

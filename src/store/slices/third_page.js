@@ -10,6 +10,15 @@ export const thirdPageSlice = createSlice({
     fifth_argument: 0,
   },
   reducers: {
+    setInitialState_thirdPage: () => {
+      return {
+        first_argument: 0,
+        second_argument: 0,
+        third_argument: 0,
+        fourth_argument: 0,
+        fifth_argument: 0,
+      }
+    },
     setFirstArgument: (state, action) => {
       return {
         ...state,
@@ -43,6 +52,6 @@ export const thirdPageSlice = createSlice({
   }
 })
 
-export const { setFirstArgument, setSecondArgument, setThirdArgument, setFourthArgument, setFifthArgument } = thirdPageSlice.actions
+export const { setFirstArgument, setSecondArgument, setThirdArgument, setFourthArgument, setFifthArgument, setInitialState_thirdPage } = thirdPageSlice.actions
 
 export default thirdPageSlice.reducer
